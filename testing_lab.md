@@ -15,15 +15,21 @@ The task for this lab is to plan and create an object oriented model of a Pub, w
 7. Test classes and methods
 
 MVP:
-
+# done
   - A `Pub` should have a `name`, a `till`, and a collection of `drinks`
+  # done
   - A `Drink` should have a `name`, and a `price`
+
+  # done 
   - A `Customer` should have a `name`, and a `wallet`
+
+# done
   - A `Customer` should be able to buy a `Drink` from the `Pub`, reducing the money in its `wallet` and increasing the money in the `Pub`'s `till`
 
 Extensions:
-
+# done
   - Add an `age` to the `Customer`. Make sure the `Pub` checks the `age` before serving the `Customer`.
+  
   - Add `alcohol_level` to the Drink, and a `drunkenness` level to the `Customer`. Every time a `Customer` buys a drink, the `drunkenness` level should go up by the `alcohol_level`.
   - `Pub` should refuse service above a certain level of `drunkenness`!
 
