@@ -35,9 +35,11 @@ Extensions:
   - `Pub` should refuse service above a certain level of `drunkenness`!
 
 Advanced extensions:
-
+# done
   - Create a `Food` class, that has a `name`, `price` and `rejuvenation_level`. Each time a `Customer` buys `Food`, their `drunkenness` should go down by the `rejuvenation_level`
+  # done
   - Pub can have a `stock` (maybe a Dictionary?) to keep track the amount of `drinks` available (Hard! Might need to change the drinks List to a drinks Dictionary)
+  # done, thanks to Allen
   - Pub can have a `stock_value` method to check the total value of its `drinks`
 
 ### Files and Directories
