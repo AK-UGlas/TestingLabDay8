@@ -16,8 +16,13 @@ class Pub:
         return False
     
     def sell_drink_to_customer(self, customer, drink):
-        if customer.age >= 18 and self.reject_customer(customer):
+        if customer.age >= 18 and self.reject_customer(customer) and self.check_customer_can_afford(customer, drink.price):
             # take money from customer
             customer.buy_drink(drink)
             # add money to the pub till
             self.add_money_to_till(drink.price)
+
+    def check_customer_can_afford(self, customer, amount):
+        if customer.wallet >= amount:
+            return True
+        return False
