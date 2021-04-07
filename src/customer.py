@@ -12,11 +12,10 @@ class Customer:
         self.drunkenness += drink.alcohol_lvl
 
     def eat_food(self, food):
-        if self.drunkenness < food.rejuvenation_lvl:
+        self.drunkenness -= food.rejuvenation_lvl
+        if self.drunkenness < 0:
             self.drunkenness = 0
-        else:
-            self.drunkenness -= food.rejuvenation_lvl
-
+        
     def buy_food(self, food):
         self.wallet -= food.price
         

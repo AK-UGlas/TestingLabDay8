@@ -25,4 +25,9 @@ class TestCustomer(unittest.TestCase):
         self.customer.eat_food(self.food)
         self.assertEqual(10, self.customer.drunkenness)
 
+    def test_rejuvenation_not_less_than_zero(self):
+        self.customer.drunkenness = 5
+        self.customer.eat_food(self.food)
+        self.assertEqual(0, self.customer.drunkenness)
+
 
