@@ -9,11 +9,15 @@ class Pub:
 
     def add_drink_to_stock(self, drink):
         self.drinks.append(drink)    
-
+    
+    def reject_customer(self, customer):
+        if customer.drunkenness < 80:
+            return True
+        return False
+    
     def sell_drink_to_customer(self, customer, drink):
-        if customer.age >= 18:
+        if customer.age >= 18 and self.reject_customer(customer):
             # take money from customer
             customer.buy_drink(drink)
             # add money to the pub till
             self.add_money_to_till(drink.price)
-

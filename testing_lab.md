@@ -29,8 +29,9 @@ MVP:
 Extensions:
 # done
   - Add an `age` to the `Customer`. Make sure the `Pub` checks the `age` before serving the `Customer`.
-  
+# done
   - Add `alcohol_level` to the Drink, and a `drunkenness` level to the `Customer`. Every time a `Customer` buys a drink, the `drunkenness` level should go up by the `alcohol_level`.
+# done
   - `Pub` should refuse service above a certain level of `drunkenness`!
 
 Advanced extensions:

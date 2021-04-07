@@ -26,4 +26,8 @@ class TestPub(unittest.TestCase):
         self.assertEqual(self.pub.till, 200.00)
         self.assertEqual(self.customer_2.wallet, 100)
 
+    def test_reject_customer(self):
+        self.customer.drunkenness = 90
+        self.assertEqual(self.pub.reject_customer(self.customer), False)
+
     
